@@ -165,5 +165,12 @@ void Error::set_print_backtrace(bool enabled) {
   _print_backtrace = enabled;
 }
 
+
+void Error::set_print_errors(bool print_errors) {_print_errors = print_errors;}
+
+void Error::set_default_stream(std::ostream * ostr) {
+    _default_ostr = ostr;
+}
+
 FASTJET_END_NAMESPACE
 
